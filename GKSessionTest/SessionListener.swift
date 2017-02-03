@@ -11,6 +11,11 @@ import GameKit
 
 class SessionListener: NSObject, GKGameSessionEventListener {
     
+    override init() {
+        super.init()
+        print("Setting up listener")
+    }
+    
     func session(_ session: GKGameSession, didAdd player: GKCloudPlayer) {
         print("Did add player")
     }

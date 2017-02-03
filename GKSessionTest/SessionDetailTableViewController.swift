@@ -29,9 +29,6 @@ class SessionDetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let listener = SessionListener()
-        GKGameSession.add(listener: listener)
 
         title = session.title
         
