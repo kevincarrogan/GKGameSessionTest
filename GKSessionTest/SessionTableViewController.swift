@@ -51,5 +51,14 @@ class SessionTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let sessionDetailTableViewController = segue.destination as? SessionDetailTableViewController,
+            let cell = sender as? UITableViewCell {
+            if let indexPath = tableView.indexPath(for: cell) {
+                sessionDetailTableViewController.session = sessions[indexPath.row]
+            }
+        }
+    }
 
 }
