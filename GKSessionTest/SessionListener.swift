@@ -17,7 +17,28 @@ class SessionListener: NSObject, GKGameSessionEventListener {
     }
     
     func session(_ session: GKGameSession, didAdd player: GKCloudPlayer) {
-        print("Did add player")
+        print("didAdd player")
+    }
+    
+    func session(_ session: GKGameSession, didReceiveMessage message: String, with data: Data, from player: GKCloudPlayer) {
+        print("didReceiveMessage")
+        print(message)
+    }
+    
+    func session(_ session: GKGameSession, didRemove player: GKCloudPlayer) {
+        print("didRemove player")
+    }
+    
+    func session(_ session: GKGameSession, player: GKCloudPlayer, didSave data: Data) {
+        print("player didSave data")
+    }
+    
+    func session(_ session: GKGameSession, didReceive data: Data, from player: GKCloudPlayer) {
+        print("didReceive data from player")
+    }
+    
+    func session(_ session: GKGameSession, player: GKCloudPlayer, didChange newState: GKConnectionState) {
+        print("player didChange")
     }
     
 }
