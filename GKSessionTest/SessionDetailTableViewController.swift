@@ -27,6 +27,16 @@ class SessionDetailTableViewController: UITableViewController {
         }
     }
 
+    @IBAction func sendMessage(_ sender: Any) {
+        session.sendMessage(withLocalizedFormatKey: "Test message", arguments: [], data: Data(), to: session.players, badgePlayers: true) {
+            (error) in
+            if let error = error {
+                print("Failed to send message")
+                print(error)
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
