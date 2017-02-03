@@ -16,6 +16,16 @@ class SessionDetailTableViewController: UITableViewController {
     @IBOutlet weak var identifierLabel: UILabel!
 
     public var session: GKGameSession!
+    
+    @IBAction func share(_ sender: Any) {
+        session.getShareURL {
+            (url, error) in
+            if let url = url {
+                let shareSheet = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+                self.present(shareSheet, animated: true, completion: nil)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

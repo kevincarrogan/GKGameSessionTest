@@ -139,6 +139,27 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ehk-wq-qh4">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehk-wq-qh4" id="AmI-Ry-Z9F">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s0-fQ-apm">
+                                                    <rect key="frame" x="167" y="6" width="40" height="30"/>
+                                                    <state key="normal" title="Share"/>
+                                                    <connections>
+                                                        <action selector="share:" destination="cQk-6C-Jjy" eventType="touchUpInside" id="vbN-sw-4LF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0s0-fQ-apm" firstAttribute="centerY" secondItem="AmI-Ry-Z9F" secondAttribute="centerY" id="j4R-4C-qu2"/>
+                                                <constraint firstItem="0s0-fQ-apm" firstAttribute="centerX" secondItem="AmI-Ry-Z9F" secondAttribute="centerX" id="nOk-fm-aqu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
