@@ -37,6 +37,18 @@ class SessionDetailTableViewController: UITableViewController {
         }
     }
 
+    @IBAction func deleteSession(_ sender: Any) {
+        GKGameSession.remove(withIdentifier: session.identifier) {
+            (error) in
+            if let error = error {
+                print("Error removing session")
+                print(error)
+            } else {
+                
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

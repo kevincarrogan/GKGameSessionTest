@@ -19,6 +19,10 @@ class SessionTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func removeSession(segue: UIStoryboardSegue) {
+        loadSessions()
+    }
+    
     func loadSessions() {
         GKGameSession.loadSessions(inContainer: nil) {
             (sessions, error) in

@@ -181,6 +181,30 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dWI-Yv-SRa">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWI-Yv-SRa" id="MaS-dr-C1i">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6R-2g-XRH">
+                                                    <rect key="frame" x="137" y="6" width="102" height="30"/>
+                                                    <state key="normal" title="Delete Session">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteSession:" destination="cQk-6C-Jjy" eventType="touchUpInside" id="Oig-YE-uYp"/>
+                                                        <segue destination="xiq-JZ-mKa" kind="unwind" unwindAction="removeSessionWithSegue:" id="5Xi-pT-U8T"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e6R-2g-XRH" firstAttribute="centerX" secondItem="MaS-dr-C1i" secondAttribute="centerX" id="2Al-wW-823"/>
+                                                <constraint firstItem="e6R-2g-XRH" firstAttribute="centerY" secondItem="MaS-dr-C1i" secondAttribute="centerY" id="xpY-P8-rZA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -197,6 +221,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQv-zT-b1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xiq-JZ-mKa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1900" y="114"/>
         </scene>
