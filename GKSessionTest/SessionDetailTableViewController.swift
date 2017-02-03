@@ -28,6 +28,8 @@ class SessionDetailTableViewController: UITableViewController {
     }
 
     @IBAction func sendMessage(_ sender: Any) {
+        //Do not send with data: nil or you will crash
+        // receiving listeners
         session.sendMessage(withLocalizedFormatKey: "Test message", arguments: [], data: Data(), to: session.players, badgePlayers: true) {
             (error) in
             if let error = error {
