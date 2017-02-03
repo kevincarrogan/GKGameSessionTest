@@ -15,6 +15,7 @@
 		9E9A7B7C1E45158500281773 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9A7B7B1E45158500281773 /* CloudKit.framework */; };
 		9E9A7B7E1E45158C00281773 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9A7B7D1E45158C00281773 /* GameKit.framework */; };
 		9E9A7B801E452A6000281773 /* SessionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A7B7F1E452A6000281773 /* SessionDetailTableViewController.swift */; };
+		9E9A7B821E45337400281773 /* SessionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A7B811E45337400281773 /* SessionListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9E9A7B7B1E45158500281773 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9E9A7B7D1E45158C00281773 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		9E9A7B7F1E452A6000281773 /* SessionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailTableViewController.swift; sourceTree = "<group>"; };
+		9E9A7B811E45337400281773 /* SessionListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9E9A7B711E45147200281773 /* Info.plist */,
 				9E9A7B771E4514E500281773 /* SessionTableViewController.swift */,
 				9E9A7B7F1E452A6000281773 /* SessionDetailTableViewController.swift */,
+				9E9A7B811E45337400281773 /* SessionListener.swift */,
 			);
 			path = GKSessionTest;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				9E9A7B781E4514E500281773 /* SessionTableViewController.swift in Sources */,
 				9E9A7B661E45147200281773 /* AppDelegate.swift in Sources */,
+				9E9A7B821E45337400281773 /* SessionListener.swift in Sources */,
 				9E9A7B801E452A6000281773 /* SessionDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
