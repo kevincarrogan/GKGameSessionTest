@@ -24,6 +24,7 @@ class SessionTableViewController: UITableViewController {
             (sessions, error) in
             if let sessions = sessions {
                 self.sessions = sessions
+                self.refreshControl?.endRefreshing()
                 self.tableView.reloadData()
             }
         }
@@ -31,6 +32,9 @@ class SessionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl!.addTarget(self, action: #selector(loadSessions), for: .valueChanged)
 
         loadSessions()
     }
