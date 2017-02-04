@@ -60,5 +60,12 @@ class SessionDetailTableViewController: UITableViewController {
         playerCountLabel.text = String(session.players.count)
         identifierLabel.text = session.identifier
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowPlayers",
+            let playersViewController = segue.destination as? SessionPlayersTableViewController {
+            playersViewController.session = session
+        }
+    }
 
 }

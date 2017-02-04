@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E745F5B1E45677E00B5CB0C /* SessionPlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E745F5A1E45677E00B5CB0C /* SessionPlayersTableViewController.swift */; };
 		9E9A7B661E45147200281773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A7B651E45147200281773 /* AppDelegate.swift */; };
 		9E9A7B6B1E45147200281773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9A7B691E45147200281773 /* Main.storyboard */; };
 		9E9A7B6D1E45147200281773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9A7B6C1E45147200281773 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E745F5A1E45677E00B5CB0C /* SessionPlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPlayersTableViewController.swift; sourceTree = "<group>"; };
 		9E9A7B621E45147200281773 /* GKSessionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKSessionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9A7B651E45147200281773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E9A7B6A1E45147200281773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				9E9A7B771E4514E500281773 /* SessionTableViewController.swift */,
 				9E9A7B7F1E452A6000281773 /* SessionDetailTableViewController.swift */,
 				9E9A7B811E45337400281773 /* SessionListener.swift */,
+				9E745F5A1E45677E00B5CB0C /* SessionPlayersTableViewController.swift */,
 			);
 			path = GKSessionTest;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E745F5B1E45677E00B5CB0C /* SessionPlayersTableViewController.swift in Sources */,
 				9E9A7B781E4514E500281773 /* SessionTableViewController.swift in Sources */,
 				9E9A7B661E45147200281773 /* AppDelegate.swift in Sources */,
 				9E9A7B821E45337400281773 /* SessionListener.swift in Sources */,
@@ -339,6 +343,7 @@
 				9E9A7B761E45147200281773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
